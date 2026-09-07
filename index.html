@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darrick Dang | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#landing" class="nav-brand">Darrick Dang.</a>
+            <ul class="nav-links">
+                <li><a href="#landing" class="nav-item">About</a></li>
+                <li><a href="#resume" class="nav-item">CV / Resume</a></li>
+                <li><a href="#task1a" class="nav-item">Competencies</a></li>
+                <li><a href="#cover-letter" class="nav-item">Cover Letter</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <section id="landing">
+            <div class="hero-section">
+                <div class="hero-img-wrap">
+                    <img src="profile.png" alt="Darrick Dang" class="hero-image">
+                </div>
+                <div class="hero-content">
+                    <h1>Darrick Dang</h1>
+                    <div class="hero-tagline-wrap">
+                        <span id="typing-text"></span><span class="typing-cursor"></span>
+                    </div>
+                    <div class="hero-bio">
+                        <p>I am a final-year Software Engineering student passionate about building technology that creates positive, real-world impact for communities. I thrive at the intersection of complex technical problem-solving and practical product delivery.</p>
+                        <p>Recently, I completed a 12-week internship as a Software Engineering Intern at Optik Consultancy, where I developed computer vision and 3D depth pipelines. That experience pushed my technical limits, sharpened my engineering discipline, and reinforced my ability to deliver resilient, client-focused software under tight demands.</p>
+                        <p>I operate on a simple principle: with discipline and hard work, any complex problem can be solved. I bring this mindset into everything I do—from engineering software and leading community initiatives to personal fitness and lifelong learning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume">
+            <div class="section-header">
+                <span class="section-subtitle">Curriculum Vitae</span>
+                <h2 class="section-title">Professional Resume</h2>
+            </div>
+            
+            <div class="pdf-wrapper">
+                <div class="pdf-header-bar">
+                    <a href="resume.pdf" target="_blank" download class="download-btn">
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+                <div class="pdf-container">
+                    <iframe src="resume.pdf#toolbar=0&navpanes=0&scrollbar=1&view=FitH"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="task1a">
+            <div class="section-header">
+                <span class="section-subtitle">Competencies</span>
+                <h2 class="section-title">Selection Criteria Responses</h2>
+            </div>
+
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All Categories</button>
+                <button class="filter-btn" data-filter="ethics">Ethics & Accountability</button>
+                <button class="filter-btn" data-filter="comm">Communication</button>
+                <button class="filter-btn" data-filter="tech">Innovation</button>
+                <button class="filter-btn" data-filter="mgmt">Management & Leadership</button>
+            </div>
+
+            <div class="cards-grid">
+                <div class="content-card" data-category="ethics">
+                    <div class="card-header">
+                        <h3>3.1 Commitment to Ethical Conduct & Professional Accountability</h3>
+                        <div class="toggle-icon">✕</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="star-item"><span class="star-label">Situation/Task:</span> During my engineering internship at Optik Consultancy, I was tasked with processing GoPro video capture feeds to output 3D volumetric damage measurements of road defects for client Damage Control Project Management (DCPM).</div>
+                        <div class="star-item"><span class="star-label">Action:</span> Photogrammetry proved too computationally heavy for a lightweight solution, while basic geometric calculations failed on irregular potholes. Rather than submitting flawed geometric approximations to meet a deadline, I raised the reliability flaw with my team and engineered a lightweight telemetry fusion pipeline combining monocular depth maps, camera angles, and distance metrics with raw GPMF telemetry.</div>
+                        <div class="star-item"><span class="star-label">Result:</span> Prioritising scientific accuracy and professional accountability over a quick release ensured municipal reports received precise, audit-ready volumetric measurements, maintaining design integrity and upholding strict engineering standards.</div>
+                    </div>
+                </div>
+
+                <div class="content-card" data-category="comm">
+                    <div class="card-header">
+                        <h3>3.2 Effective Communication with Engineers & Stakeholders</h3>
+                        <div class="toggle-icon">✕</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="star-item"><span class="star-label">Situation/Task:</span> Across my project work including delivering a custom e-commerce web platform for the Vanuatu Women's HandiCrafts project and leading computer vision workflows at Optik Consultancy, I routinely needed to bridge technical design and non-technical user requirements.</div>
+                        <div class="star-item"><span class="star-label">Action:</span> I authored comprehensive technical documentation and API architecture models for engineering peers, while concurrently creating simplified visual user guides and plain-language operational manuals for non-technical clients and international craft artisans.</div>
+                        <div class="star-item"><span class="star-label">Result:</span> This dual-communication approach enabled software teams to maintain clean code standards while empowering non-technical stakeholders to independently manage and operate digital systems without ongoing technical intervention.</div>
+                    </div>
+                </div>
+
+                <div class="content-card" data-category="tech">
+                    <div class="card-header">
+                        <h3>3.3 Engagement with Creative, Innovative & Proactive Environments</h3>
+                        <div class="toggle-icon">✕</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="star-item"><span class="star-label">Situation/Task:</span> At Optik Consultancy, conventional 2D defect detection was insufficient for calculating real-world metric 3D damage profiles required for modern council infrastructure restoration.</div>
+                        <div class="star-item"><span class="star-label">Action:</span> I proactively designed an innovative depth estimation pipeline in Python and OpenCV, integrating monocular depth maps with YOLOv8 and SAM2 segmentation models, and fusing them with GPMF telemetry (IMU/GPS data).</div>
+                        <div class="star-item"><span class="star-label">Result:</span> This automated workflow replaced manual field inspections by directly generating pixel-precise GeoJSON spatial exports, accelerating defect mapping turnaround times for clients.</div>
+                    </div>
+                </div>
+
+                <div class="content-card" data-category="mgmt">
+                    <div class="card-header">
+                        <h3>3.4 Ability to Use and Manage Information</h3>
+                        <div class="toggle-icon">✕</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="star-item"><span class="star-label">Situation/Task:</span> In the Corporate Training Platform architecture project, complex system requirements across microservices, AWS environments, and business goals required structured organisation to ensure clarity for system evaluators.</div>
+                        <div class="star-item"><span class="star-label">Action:</span> I systematically modeled and structured the system using C4 architecture diagrams, UML visualisations, and an Architecture Tradeoff Analysis Method (ATAM) framework to categorise functional and non-functional requirements.</div>
+                        <div class="star-item"><span class="star-label">Result:</span> Establishing this clear information architecture streamlined design rationale evaluations, allowing team members and reviewers to rapidly query system components, trace data flows, and verify alignment against core business objectives.</div>
+                    </div>
+                </div>
+
+                <div class="content-card" data-category="mgmt">
+                    <div class="card-header">
+                        <h3>3.5 Self-Management & Professional Performance</h3>
+                        <div class="toggle-icon">✕</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="star-item"><span class="star-label">Situation/Task:</span> Balancing my final-year software engineering degree at UTS alongside my internship at Optik Consultancy, leadership responsibilities as Director of IT at VSA NSW, and shift work at Mooney Mooney club required high-level self-management.</div>
+                        <div class="star-item"><span class="star-label">Action:</span> I implemented structured time-blocking routines, set clear weekly milestones, and utilised digital tracking systems to systematically prioritise tasks. I actively solicited performance feedback from senior engineering mentors and independently upskilled in emerging technical frameworks as project scopes evolved.</div>
+                        <div class="star-item"><span class="star-label">Result:</span> I consistently delivered high-quality project outcomes early across all roles, maintained a strong academic record, and established a proven framework for personal professional development.</div>
+                    </div>
+                </div>
+
+                <div class="content-card" data-category="mgmt">
+                    <div class="card-header">
+                        <h3>3.6 Teamwork & Leadership Capabilities</h3>
+                        <div class="toggle-icon">✕</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="star-item"><span class="star-label">Situation/Task:</span> During my engineering internship at Optik Consultancy, I took the lead on developing the core 3D volumetric damage estimation pipeline, which required coordinating computer vision workflows and spatial data integration across multiple contributors under tight timelines.</div>
+                        <div class="star-item"><span class="star-label">Action:</span> I established clear Git protocols, broke down module deliverables across segmentation and telemetry fusion, and led collaborative debugging sessions when technical alignment issues arose.</div>
+                        <div class="star-item"><span class="star-label">Result:</span> Under my technical leadership, the team successfully delivered an end-to-end, automated spatial pipeline on schedule. Additionally, I applied these collaborative leadership skills as Director of IT at VSA NSW, leading digital operations and team logistics to help run major community events that raised up to $7,000 for charity.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cover-letter">
+            <div class="section-header">
+                <span class="section-subtitle">Application Letter</span>
+                <h2 class="section-title">Cover Letter</h2>
+            </div>
+
+            <div class="cover-letter-card">
+                <div class="cover-letter-meta">
+                    <p><strong>Darrick Dang</strong><br>
+                    Sydney, Australia</p>
+                    
+                    <div class="interactive-contact">
+                        <button class="contact-badge" data-copy="darrick2003d@gmail.com" data-msg="Email address copied!">
+                            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            darrick2003d@gmail.com
+                        </button>
+                        <button class="contact-badge" data-copy="+61452246309" data-msg="Phone number copied!">
+                            📞 +61 452 246 309
+                        </button>
+                        <a href="https://www.linkedin.com/in/darrick-dang" target="_blank" class="contact-badge">
+                            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.64a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>
+                            LinkedIn Profile
+                        </a>
+                    </div>
+                    <p style="margin-top: 1rem;">27/8/2026</p>
+                    <p><strong>Industrus Engineering</strong><br>Sydney, NSW</p>
+                    <p><strong>Re: Application for the Industrus Engineering Graduate Program</strong></p>
+                </div>
+
+                <p>Dear Hiring Manager,</p>
+
+                <p>I am writing to express my interest in the Industrus Engineering Graduate Program. As a final-year Bachelor of Engineering (Honours) student in Software Engineering at the University of Technology Sydney (UTS), I am drawn to Industrus's use of digital technology to solve complex physical infrastructure problems, such as restoring transport access after natural disasters. My practical experience in spatial data pipeline architecture, computer vision, and team leadership directly aligns with your selection criteria, as detailed below.</p>
+
+                <p><strong>Criteria 3.1: A commitment to ethical conduct and the highest standards of professional accountability</strong><br>
+                <strong>Situation/Task:</strong> During my engineering internship at Optik Consultancy, I was tasked with processing GoPro video capture feeds to output 3D volumetric damage measurements of road defects for client Damage Control Project Management (DCPM).<br>
+                • <strong>Action:</strong> Photogrammetry proved too computationally heavy for a lightweight solution, while basic geometric calculations failed on irregular potholes. Rather than submitting flawed geometric approximations to meet a deadline, I raised the reliability flaw with my team and engineered a lightweight telemetry fusion pipeline combining monocular depth maps, camera angles, and distance metrics with raw GPMF telemetry.<br>
+                <strong>Result:</strong> Prioritising scientific accuracy and professional accountability over a quick release ensured municipal reports received precise, audit-ready volumetric measurements, maintaining design integrity and upholding strict engineering standards.</p>
+
+                <p><strong>Criteria 3.2: Demonstrated ability to effectively communicate both with other engineers and with stakeholders from different fields</strong><br>
+                <strong>Situation/Task:</strong> Across my project work including delivering a custom e-commerce web platform for the Vanuatu Women's HandiCrafts project and leading computer vision workflows at Optik Consultancy, I routinely needed to bridge technical design and non-technical user requirements.<br>
+                <strong>Action:</strong> I authored comprehensive technical documentation and API architecture models for engineering peers, while concurrently creating simplified visual user guides and plain-language operational manuals for non-technical clients and international craft artisans.<br>
+                <strong>Result:</strong> This dual-communication approach enabled software teams to maintain clean code standards while empowering non-technical stakeholders to independently manage and operate digital systems without ongoing technical intervention.</p>
+
+                <p><strong>Criteria 3.3: The ability to engage with a creative, innovative and proactive environment</strong><br>
+                <strong>Situation/Task:</strong> At Optik Consultancy, conventional 2D defect detection was insufficient for calculating real-world metric 3D damage profiles required for modern council infrastructure restoration.<br>
+                <strong>Action:</strong> I proactively designed an innovative depth estimation pipeline in Python and OpenCV, integrating monocular depth maps with YOLOv8 and SAM2 segmentation models, and fusing them with GPMF telemetry (IMU/GPS data).<br>
+                <strong>Result:</strong> This automated workflow replaced manual field inspections by directly generating pixel-precise GeoJSON spatial exports, accelerating defect mapping turnaround times for clients.</p>
+
+                <p><strong>Criteria 3.4: Demonstrated ability to use and manage information</strong><br>
+                <strong>Situation/Task:</strong> In the Corporate Training Platform architecture project, complex system requirements across microservices, AWS environments, and business goals required structured organisation to ensure clarity for system evaluators.<br>
+                <strong>Action:</strong> I systematically modeled and structured the system using C4 architecture diagrams, UML visualisations, and an Architecture Tradeoff Analysis Method (ATAM) framework to categorise functional and non-functional requirements.<br>
+                <strong>Result:</strong> Establishing this clear information architecture streamlined design rationale evaluations, allowing team members and reviewers to rapidly query system components, trace data flows, and verify alignment against core business objectives.</p>
+
+                <p><strong>Criteria 3.5: The ability to manage your own performance in a professional environment</strong><br>
+                <strong>Situation/Task:</strong> Balancing my final-year software engineering degree at UTS alongside my internship at Optik Consultancy, leadership responsibilities as Director of IT at VSA NSW, and shift work at Mooney Mooney club required high-level self-management.<br>
+                <strong>Action:</strong> I implemented structured time-blocking routines, set clear weekly milestones, and utilised digital tracking systems to systematically prioritise tasks. I actively solicited performance feedback from senior engineering mentors and independently upskilled in emerging technical frameworks as project scopes evolved.<br>
+                <strong>Result:</strong> I consistently delivered high-quality project outcomes early across all roles, maintained a strong academic record, and established a proven framework for personal professional development.</p>
+
+                <p><strong>Criteria 3.6: A demonstrated ability to work as part of a team and to show leadership when required</strong><br>
+                <strong>Situation/Task:</strong> During my engineering internship at Optik Consultancy, I took the lead on developing the core 3D volumetric damage estimation pipeline, which required coordinating computer vision workflows and spatial data integration across multiple contributors under tight timelines.<br>
+                <strong>Action:</strong> I established clear Git protocols, broke down module deliverables across segmentation and telemetry fusion, and led collaborative debugging sessions when technical alignment issues arose.<br>
+                <strong>Result:</strong> Under my technical leadership, the team successfully delivered an end-to-end, automated spatial pipeline on schedule. Additionally, I applied these collaborative leadership skills as Director of IT at VSA NSW, leading digital operations and team logistics to help run major community events that raised up to $7,000 for charity.</p>
+
+                <p>I welcome the opportunity to discuss how my technical skills in software, spatial data management, and proactive leadership can add value to Industrus Engineering. I can be reached via phone at +61 452 246 309 or email at darrick2003d@gmail.com, and I attach my resume for your review.</p>
+
+                <p>Sincerely,<br>
+                <strong>Darrick Dang</strong></p>
+            </div>
+        </section>
+
+    </div>
+
+    <button class="back-to-top" id="backToTop">▲</button>
+
+    <div class="toast" id="toast">Copied to clipboard!</div>
+
+    <footer>
+        <p>&copy; 2026 Darrick Dang. Personal E-Portfolio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
